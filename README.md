@@ -1,27 +1,18 @@
-# React + TypeScript + Vite
+Neste projeto, explorei conceitos avançados para criar uma aplicação de pedidos de cafés. Está aplicação foi desenvolvida contendo três telas:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. A primeira é uma tela inicial intuitiva, apresentando uma lista completa dos cafés disponíveis. Os usuários podem explorar diversas opções antes de fazer suas escolhas.
 
-Currently, two official plugins are available:
+2. Na segunda tela, os usuários são guiados a preencher um formulário detalhado, fornecendo informações de endereço essenciais para a entrega. Ao lado, uma visualização dinâmica do carrinho permite ajustar quantidades e remover itens, garantindo uma experiência personalizada.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. Por fim, os usuários revisam e confirmam seus pedidos. Detalhes completos da compra e informações de entrega são exibidos, oferecendo transparência e segurança durante todo o processo de compra.
 
-## Expanding the ESLint configuration
+💻 Para desenvolver este projeto, utilizei as seguintes tecnologias:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Vite
+- Styled Components
+- Local Storage
+- Typescript
+- Context API
+- React Router Dom
+- React Hook Form
+- Validações de formulário com Zod
