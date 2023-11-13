@@ -1,4 +1,6 @@
-Neste projeto, explorei conceitos avançados para criar uma aplicação de pedidos de cafés. Está aplicação foi desenvolvida contendo três telas:
+##Sobre o projeto
+
+-Neste projeto, explorei conceitos avançados para criar uma aplicação de pedidos de cafés. Está aplicação foi desenvolvida contendo três telas:
 
 1. A primeira é uma tela inicial intuitiva, apresentando uma lista completa dos cafés disponíveis. Os usuários podem explorar diversas opções antes de fazer suas escolhas.
 
