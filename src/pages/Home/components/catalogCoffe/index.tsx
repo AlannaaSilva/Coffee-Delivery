@@ -1,5 +1,5 @@
 import { TitleText } from "../../../../components/typography";
-import { coffees } from "../../../../data/coffees";
+import { productTree } from "../../../../data/coffees";
 import { CoffeCard } from "../CoffeCard";
 import { CatalogCoffeContainer, CoffeList } from "./style";
 
@@ -12,7 +12,7 @@ export function CatalogCoffe() {
     </TitleText>
 
     <CoffeList>
-      {coffees.map((coffee) => ( 
+      {productTree.map((coffee) => ( 
         <CoffeCard key={coffee.id} coffee={coffee}/>
       ))}
      
