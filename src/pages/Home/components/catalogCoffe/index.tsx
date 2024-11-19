@@ -7,7 +7,7 @@ export function CatalogCoffe() {
   return (
     <CatalogCoffeContainer className="container">
       <TitleText size="l" color="subtitle">
-        Catalogo de Café{" "}
+        Catálogo de Café ☕️
       </TitleText>
 
       <CoffeList>
