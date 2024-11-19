@@ -1,6 +1,6 @@
 export const accessories = [
   {
-    id: 6,
+    id: 1,
     tags: ["Filtro"],
     name: "Filtro de Café",
     description:
@@ -9,7 +9,7 @@ export const accessories = [
     price: 4.9,
   },
   {
-    id: 7,
+    id: 2,
     tags: ["Canecas"],
     name: "Caneca de Cerâmica",
     description:
@@ -18,7 +18,7 @@ export const accessories = [
     price: 19.9,
   },
   {
-    id: 8,
+    id: 3,
     tags: ["Coador"],
     name: "Coador de Café",
     description:
@@ -27,7 +27,7 @@ export const accessories = [
     price: 9.9,
   },
   {
-    id: 9,
+    id: 4,
     tags: ["Moedor"],
     name: "Moedor Manual de Café",
     description:
@@ -36,7 +36,7 @@ export const accessories = [
     price: 49.9,
   },
   {
-    id: 10,
+    id: 5,
     tags: ["Prensa Francesa"],
     name: "Prensa Francesa",
     description:
@@ -45,7 +45,7 @@ export const accessories = [
     price: 79.9,
   },
   {
-    id: 11,
+    id: 6,
     tags: ["Espumador"],
     name: "Espumador de Leite",
     description:
@@ -54,7 +54,7 @@ export const accessories = [
     price: 39.9,
   },
   {
-    id: 12,
+    id: 7,
     tags: ["Bule"],
     name: "Bule de Café",
     description:
