@@ -6,11 +6,13 @@ export const productTree = [
         subcategory: "Moído",
         subcategories: [
           { subcategory: "Especial" , items: [
-            { id: 1, name: "Orfeu Clássico", description: "Orfeu Clássico é um café equilibrado de aroma complexo, com notas florais, frutadas e de caramelo", photo: "https://m.media-amazon.com/images/I/61QHBfGnyVL._AC_SY679_.jpg", price: 20.39, tags: ["especial"] },
-            // { id: 2, name: "Expresso Americano", description: "Expresso diluído", photo: "americano.svg", price: 9.9, tags: ["tradicional"] },
-            
+            { id: 1, name: "Orfeu Clássico 250g", description: "Orfeu Clássico é um café equilibrado de aroma complexo, com notas florais, frutadas e de caramelo", photo: "https://m.media-amazon.com/images/I/61QHBfGnyVL._AC_SY679_.jpg", price: 20.39, tags: ["especial"]},
+            { id: 2, name: "Starbucks Single-Origin Colombia 250g", description: "Equilibrado com notas de nozes, torra média", photo: "https://www.starbucksathome.com/br/media/catalog/product/cache/9c4f60e3b2852ffaef00687769c4dc27/m/i/microsoftteams-image_1__1.png", price: 22.49, tags: ["especial"]},
           ]},
-          { subcategory: "Gourmet" },
+          { subcategory: "Gourmet", items: [
+            { id: 2, name: "3 Corações Café Torrado e Moído Gourmet Sul de Minas, 250g", description: "Notas sensoriais: Castanhas e Amêndoas. Intensidade: Suave. Torra: Média", photo: "https://m.media-amazon.com/images/I/51pC6oGz8RL._AC_SX679_.jpg", price: 17.27, tags: ["gourmet"]},
+            { id: 3, name: "3 Corações Café Torrado e Moído Gourmet Mogiana Paulista, 250G", description: "Café torrado e moído 3 corações gourmet mogiana paulista 250g Descubra produtos úteis para você", photo: "https://m.media-amazon.com/images/I/51m0UR9b1oL._AC_SX679_.jpg", price: 17.27, tags: ["gourmet"]},
+          ]},
           { subcategory: "Superior" },
           { subcategory: "Tradicional" },
           { subcategory: "Extraforte" },
@@ -19,7 +21,10 @@ export const productTree = [
       {
         subcategory: "Em grãos",
         subcategories: [
-          { subcategory: "Especial" },
+          { subcategory: "Especial", items: [
+            { id: 4, name: "Black Tucano Honey 250g", description: "Nosso café exótico. Tradicionalmente conhecido como 'café de mel'. Café de origem única e processos nobres. Cultivado artesanalmente nas Montanhas do Espirito Santo e Minas Gerais", photo: "https://m.media-amazon.com/images/I/61VX+TUKVFL._AC_.jpg", price: 23.72, tags: ["especial"] },
+            { id: 5, name: "Black Tucano Single Origin 250g", description: "Nosso carro chefe. Contempla os cafés de origem única, ou seja cultivados por uma única fazenda ou produtor. Nesta versão, serão disponibilizados os melhores microlotes de café arábica do Espírito Santo", photo: "https://m.media-amazon.com/images/I/61VX+TUKVFL._AC_.jpg", price: 22.88, tags: ["especial"] },
+          ]},
           { subcategory: "Gourmet" },
           { subcategory: "Superior" },
           { subcategory: "Tradicional" },
