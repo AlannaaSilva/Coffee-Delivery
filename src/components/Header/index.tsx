@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   HeaderButtonLocal,
   HeaderButtonContainer,
@@ -13,6 +14,22 @@ import { useCart } from "../../hooks/useCart";
 
 export function Header() {
   const { cartQuantity } = useCart();
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+
+  const categories = [
+    {
+      name: "Cafés",
+      subcategories: ["Café Arábica", "Café Robusta", "Café Orgânico"],
+    },
+    {
+      name: "Acessórios",
+      subcategories: ["Moinhos", "Prensa Francesa", "Cafeteiras"],
+    },
+    {
+      name: "Complementos",
+      subcategories: ["Açúcar", "Leite Condensado", "Canela"],
+    },
+  ];
 
   return (
     <HeaderContainer>
@@ -21,15 +38,25 @@ export function Header() {
           <img src={logoCoffe} style={{ width: "150px", height: "auto" }} />
         </NavLink>
         <CategoryMenuContainer>
-          <CategoryMenuItem>
-            <NavLink to="/category/cafes">Cafés</NavLink>
-          </CategoryMenuItem>
-          <CategoryMenuItem>
-            <NavLink to="/category/acessorios">Acessórios</NavLink>
-          </CategoryMenuItem>
-          <CategoryMenuItem>
-            <NavLink to="/category/complementos">Complementos</NavLink>
-          </CategoryMenuItem>
+          {categories.map((category) => (
+            <CategoryMenuItem
+              key={category.name}
+              onClick={() => setActiveCategory(category.name)}
+            >
+              <NavLink to={`#`} >{category.name}</NavLink>
+
+              {/* Exibir subcategorias quando a categoria for clicada */}
+              {activeCategory === category.name && (
+                <div className="subcategories">
+                  {category.subcategories.map((subcategory) => (
+                    <NavLink key={subcategory} to={`/category/${subcategory.toLowerCase()}`}>
+                      {subcategory}
+                    </NavLink>
+                  ))}
+                </div>
+              )}
+            </CategoryMenuItem>
+          ))}
         </CategoryMenuContainer>
         <HeaderButtonContainer>
           <HeaderButtonLocal>

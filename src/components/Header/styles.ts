@@ -41,6 +41,7 @@ export const HeaderButtonLocal = styled.button`
   color: ${(props) => props.theme.colors["brand-purple-dark"]};
   cursor: inherit;
 `;
+
 export const HeaderButtonShopping = styled.button`
   display: flex;
   align-items: center;
@@ -63,13 +64,11 @@ export const HeaderButtonShopping = styled.button`
     top: calc(-1.25rem / 2);
     right: calc(-1.25rem / 2);
     color: ${(props) => props.theme.colors["base-white"]};
-
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.75rem;
     font-weight: 700;
-
     background: ${(props) => props.theme.colors["brand-yellow-dark"]};
   }
 `;
@@ -83,6 +82,8 @@ export const CategoryMenuContainer = styled.ul`
 `;
 
 export const CategoryMenuItem = styled.li`
+  position: relative;
+
   a {
     text-decoration: none;
     color: ${(props) => props.theme.colors["base-text"]};
@@ -91,6 +92,38 @@ export const CategoryMenuItem = styled.li`
 
     &:hover {
       color: ${(props) => props.theme.colors["brand-yellow-dark"]};
+    }
+  }
+
+  /* Subcategorias */
+  .subcategories {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: ${(props) => props.theme.colors["base-background"]};
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    width: max-content;
+    z-index: 10;
+  }
+
+  /* Exibe as subcategorias quando a categoria estiver ativa */
+  &:hover .subcategories {
+    display: block;
+  }
+
+  .subcategories a {
+    display: block;
+    padding: 0.5rem 0;
+    color: ${(props) => props.theme.colors["base-text"]};
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: ${(props) => props.theme.colors["brand-yellow-light"]};
     }
   }
 `;
