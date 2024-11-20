@@ -12,12 +12,12 @@ export const CoffeCardContainer = styled.div`
   justify-content: center;
 
   padding-top: 0;
-  text-align:center;
+  text-align: center;
 
-  img{
+  img {
     width: 7.5rem;
     height: 7.5rem;
-    margin-top: -1.25rem;
+    border-radius: 50%;
   }
 `;
 
@@ -43,23 +43,22 @@ export const Tags = styled.div`
 `;
 
 export const Name = styled(TitleText).attrs({
-  size:"s",
-  color:"subtitle",
-  weight:700,
+  size: "s",
+  color: "subtitle",
+  weight: 700,
 })`
   margin-bottom: 0.5rem;
-
 `;
 
 export const Description = styled(RegularText).attrs({
-  size:"s",
+  size: "s",
   color: "label",
 })`
   margin-bottom: 2rem;
 `;
 
 export const CardFooter = styled.div`
-  width:100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,17 +66,16 @@ export const CardFooter = styled.div`
   > div {
     display: flex;
     align-items: center;
-    gap:3px;
+    gap: 3px;
 
-    p{
+    p {
       line-height: 0.75rem;
     }
   }
-`
+`;
 
 export const AddCartWrapper = styled.div`
   width: 7.5rem;
- 
 
   > button {
     width: 2.375rem;
@@ -90,12 +88,10 @@ export const AddCartWrapper = styled.div`
     color: ${(props) => props.theme.colors["base-card"]};
     border-radius: 6px;
     margin-left: 0.3rem;
-    transition: .4s;
+    transition: 0.4s;
 
-    &:hover{
+    &:hover {
       background: ${(props) => props.theme.colors["brand-purple"]};
     }
-
   }
-
-`
+`;
