@@ -6,6 +6,10 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
+    "baseUrl": "./", // Define a raiz do projeto como ponto de partida
+    "paths": {
+      "@components/*": ["src/components/*"]},
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,

@@ -9,7 +9,7 @@ import {
 import {
   RegularText,
   TitleText,
-} from "/Users/alannasilva/Documents/Coffee-Delivery/src/components/typography.ts";
+} from "@components/typography";
 import { QuatityItem } from "../../../../components/QuantityItem";
 import { ShoppingCart } from "phosphor-react";
 import { formatMoney } from "../../../../utils/formatMoney";
