@@ -60,7 +60,7 @@ export const accessories = [
                 name: "Copo Medidor",
                 description:
                   "Copo medidor com capacidade para medir a quantidade exata de café e água.",
-                photo: "copomedidor.png",
+                photo: "medidor.jpeg",
                 price: 12.9,
                 tags: ["Copo Medidor", "Copos"],
               },
@@ -140,7 +140,7 @@ export const accessories = [
                 name: "Mixer",
                 description:
                   "Perfeito para criar espuma de leite e preparar bebidas como cappuccinos e lattes.",
-                photo: "termometro.png",
+                photo: "mixer.png",
                 price: 24.9,
                 tags: ["Espumadores","Mixer"],
               },
