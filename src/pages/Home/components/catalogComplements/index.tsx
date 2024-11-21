@@ -9,11 +9,23 @@ export function CatalogComplements() {
       <TitleText size="l" color="subtitle">
         Catálogo de Complementos 🙌🏼
       </TitleText>
-      <ComplementList>
-        {complements.map((coffee) => (
-          <CoffeCard key={coffee.id} coffee={coffee} />
-        ))}
-      </ComplementList>
+      {complements.map((category) => (
+        <div key={category.category}>
+          <ComplementList>
+            {category.subcategories.map((subcategory) => (
+              <>
+                {subcategory.subtypes.map((subtype) => (
+                  <div key={subtype.type}>
+                    {subtype.items.map((coffee) => (
+                      <CoffeCard key={coffee.id} coffee={coffee} />
+                    ))}
+                  </div>
+                ))}
+              </>
+            ))}
+          </ComplementList>
+        </div>
+      ))}
     </CatalogComplementsContainer>
   );
 }

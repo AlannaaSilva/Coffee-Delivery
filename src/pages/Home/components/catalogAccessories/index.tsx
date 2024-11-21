@@ -9,11 +9,23 @@ export function CatalogAccessories() {
       <TitleText size="l" color="subtitle">
         Catálogo de Acessórios 🫶🏼
       </TitleText>
-      <AccessoriesList>
-        {accessories.map((coffee) => (
-          <CoffeCard key={coffee.id} coffee={coffee} />
-        ))}
-      </AccessoriesList>
+      {accessories.map((category) => (
+        <div key={category.category}>
+          <AccessoriesList>
+            {category.subcategories.map((subcategory) => (
+              <>
+                {subcategory.subtypes.map((subtype) => (
+                  <div key={subtype.type}>
+                    {subtype.items.map((coffee) => (
+                      <CoffeCard key={coffee.id} coffee={coffee} />
+                    ))}
+                  </div>
+                ))}
+              </>
+            ))}
+          </AccessoriesList>
+        </div>
+      ))}
     </CatalogAccessoriesContainer>
   );
 }

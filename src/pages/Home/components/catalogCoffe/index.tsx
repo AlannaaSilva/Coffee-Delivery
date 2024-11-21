@@ -9,12 +9,23 @@ export function CatalogCoffe() {
       <TitleText size="l" color="subtitle">
         Catálogo de Café ☕️
       </TitleText>
-
-      <CoffeList>
-        {coffees.map((coffee) => (
-          <CoffeCard key={coffee.id} coffee={coffee} />
-        ))}
-      </CoffeList>
+      {coffees.map((category) => (
+        <div key={category.category}>
+          <CoffeList>
+            {category.subcategories.map((subcategory) => (
+              <>
+                {subcategory.subtypes.map((subtype) => (
+                  <div key={subtype.type}>
+                    {subtype.items.map((coffee) => (
+                      <CoffeCard key={coffee.id} coffee={coffee} />
+                    ))}
+                  </div>
+                ))}
+              </>
+            ))}
+          </CoffeList>
+        </div>
+      ))}
     </CatalogCoffeContainer>
   );
 }

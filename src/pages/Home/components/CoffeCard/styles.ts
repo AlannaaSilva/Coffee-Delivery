@@ -3,6 +3,7 @@ import { RegularText, TitleText } from "../../../../components/typography";
 
 export const CoffeCardContainer = styled.div`
   width: 100%;
+  height: 450px;
   background: ${(props) => props.theme.colors["base-card"]};
   border-radius: 6px 36px 6px 36px;
   padding: 1.25rem;
